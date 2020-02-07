@@ -1,6 +1,9 @@
 certifi==2019.11.28
+cffi==1.14.0
 chardet==3.0.4
 idna==2.8
+pycparser==2.19
+pygit2==1.0.3
 python-gitlab==2.0.0
 PyYAML==5.3
 requests==2.22.0
