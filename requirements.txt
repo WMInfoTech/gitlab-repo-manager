@@ -7,4 +7,4 @@ pygit2==1.0.3
 python-gitlab==2.0.0
 PyYAML==5.3
 requests==2.22.0
-urllib3==1.25.8
+urllib3==1.26.5
