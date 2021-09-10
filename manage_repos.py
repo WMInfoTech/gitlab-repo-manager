@@ -71,7 +71,7 @@ def populate_repo(repo_name, template):
     author = pygit2.Signature('Repo Manager', 'eis_deploy_user@lists.wm.edu')
     message = "Initial Commit"
 
-    oid = repo.create_commit('refs/heads/master', author, author, message, tree, [])
+    oid = repo.create_commit('refs/heads/main', author, author, message, tree, [])
 
     # Create a remote and push
     remote_url = args.url + '/' + config['group']['name'] + '/' + repo_name
@@ -79,7 +79,7 @@ def populate_repo(repo_name, template):
     if args.dry_run:
         print('[dry run] Pushing template')
     else:
-        repo.remotes['origin'].push(['refs/heads/master'], callbacks=pygit_callback)
+        repo.remotes['origin'].push(['refs/heads/main'], callbacks=pygit_callback)
 
     # Cleanup from where we populated the repo
     # os.rmdir('temp')

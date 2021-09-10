@@ -7,7 +7,7 @@ parser.add_argument("-t", "--token", help="API Token")
 parser.add_argument("-p", "--project", help="Gitlab Project", type=int)
 parser.add_argument('-u', '--url', help='The GitLab server name to use', required=True)
 parser.add_argument("-v", "--tag", help="The tag name")
-parser.add_argument("-b", "--branch", help="The branch name, default is master", default="master")
+parser.add_argument("-b", "--branch", help="The branch name, default is main", default="main")
 
 args = parser.parse_args()
 
